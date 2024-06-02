@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h1>Contact Us</h1>
+      <div id="name" class="group">
+        <div>
+          <label for="first-name">
+            First Name <span class="green">*</span>
+          </label>
+          <input type="text" id="first-name" class="rounded-border" required />
+        </div>
+        <div>
+          <label for="last-name">
+            Last Name <span class="green">*</span>
+          </label>
+          <input type="text" id="first-name" class="rounded-border" required />
+        </div>
+      </div>
+
+      <div>
+        <label for="email"> Email Address <span class="green">*</span></label>
+        <input type="email" id="email" class="rounded-border" required />
+      </div>
+
+      <div>
+        <label for="general-enquiry">
+          Query Type <span class="green">*</span>
+        </label>
+        <div class="group">
+          <div class="rounded-border query-type">
+            <input
+              type="radio"
+              value="General Enquiry"
+              name="query-type"
+              id="general-enquiry"
+              required
+            />
+            <label for="general-enquiry">General Enquiry</label>
+          </div>
+
+          <div class="rounded-border query-type">
+            <input
+              type="radio"
+              value="Support Request"
+              name="query-type"
+              id="support-request"
+              required
+            />
+            <label for="support-request">Support Request</label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="message"> Message <span class="green">*</span> </label>
+        <textarea
+          name="message"
+          id="message"
+          class="rounded-border"
+          required
+        ></textarea>
+      </div>
+      <div id="consent">
+        <input
+          type="checkbox"
+          name="consent-contact"
+          id="consent-contact"
+          required
+        />
+        <label for="consent-contact"
+          >I consent to being contacted by the team
+          <span class="green">*</span></label
+        >
+      </div>
+      <button id="btn" class="rounded-border">Submit</button>
+    </form>
+
+    <!-- TODO: Fix attribution when done. -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Lerato Tsotetsi</a>.
+    </div> -->
+  </body>
+</html>
